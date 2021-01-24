@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+
+.sidenav{
+    margin-top: 12px;
+    color: #525252;
+
+}
+.sidenav a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 5px;
+}
+.sidenav a:hover {
+    color: blueviolet;
+}
+#harmburger{
+    display: none;
+}
+
+.banner{
+    margin-top: 5rem;
+    color: #525252;
+ 
+}
+.banner__intro{
+    margin-left: 10rem;
+}
+.banner__intro h1 {
+    
+    margin-bottom: 1rem;
+}
+h1{
+    color: #525252;
+    font-size: 4vw;
+}
+
+.banner__intro h4{
+    color: #A5EAFB;
+}
+.banner__img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    margin-top: 3rem;
+}
+.story{
+    margin-bottom: 4rem;
+    width: 30vw;
+    margin-bottom: 8rem;
+}
+.story input {
+    width: 28.6vw;
+    padding: 13px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(240, 236, 236);
+}
+
+.story button{
+  position: relative;
+    padding: 11px;
+    width: 5rem;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color:#2D9CDB;
+    border: none;
+    color: white;
+    float: right;
+   
+
+}
+
+.offers__sections{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  
+    
+}
+.offer{
+    padding: 25px;
+    height: 60vh;    
+ 
+}
+.offer:hover{
+    box-shadow:  1px 3px 15px -3px rgba(132, 128, 128, 0.57);
+}
+.offers button {
+    margin-top: 3rem;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: #2D9CDB;
+    color: white;
+    border: none;
+
+}
+.offer h2{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.offer span{
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.offer #one{
+    background-color: #2D9CDB;
+ 
+}
+.offer #tow{
+    background-color: #50AF61;
+
+}
+.offer #three{
+    background-color: #EB5757;
+
+}
+.offers button:hover{
+    background-color: white;
+    color: #2D9CDB;
+    border: 1px solid #2D9CDB;
+}
+
+.designs{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7rem;
+}
+
+.designs div:nth-child(even){
+    margin-top: -6rem;
+}
+
+
+.designs div{
+    margin: 9px;
+}
+
+.designs figure img{
+    width: 38vw;
+    border-radius: 20px;
+
+}
+.designs figure{
+    margin-bottom: 5rem;
+}
+
+figcaption{
+    color: grey;
+}
+.team{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.team__intro{
+    padding-right: 4rem;
+    padding-top: 4rem;
+}
+
+.team__members{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.team__members div{
+    display: flex;
+    flex-direction: column;
+}
+.team__members img{
+    border-radius: 20px;
+    margin: 5px;
+    width: 200px;
+    
+}
+.person{
+    margin-top: 4rem;
+}
+.message h2{
+    margin-top: 2rem;
+    margin-bottom:2rem ;
+    padding: 2rem;
+}
+.message img{
+    width: 100px;
+}
+.profile{
+    display: flex;
+}
+.profile div{
+    margin: 1rem;
+}
+
+footer{
+    background-color:#100E1D ;
+    color: white;
+    min-height: 40vh;
+ 
+
+}
+.footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+footer h3{
+    margin-top: 4rem;
+    text-align: center;
+}
+.bottom_nav{
+    margin-top: 4rem;
+    margin-left: 3rem;
+
+}
+.bottom_nav li{
+    list-style: none;
+}
+.bottom_nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+.home__bottom{
+    margin-top: 4rem;
+ 
+}
+.bottom_form{
+    margin-top: 4rem;
+}
+
+
+.bottom_form input {
+   padding: 12px;
+   border-radius: 10px;
+   background-color: rgb(240, 236, 236);
+
+}
+
+.bottom_form button{
+   padding: 10px;
+   border-radius: 10px;
+   background-color:#2D9CDB;
+   border: none;
+   color: white;
+   
+
+}
+@media(max-width:800px){
+    .sidenav a:not(last-child){
+        display: none;
+    }
+    #harmburger{
+        display: block;
+    }
+    main{
+        width: 100vw;
+    }
+    .banner__intro{
+        margin-left: 0;
+    }
+    .story{
+        width: 85vw;
+    }
+    .story input{
+        width: 81vw;
+    }
+    .offers__sections{
+        flex-direction: column;
+    }
+    .designs{
+        flex-direction: column;
+    }
+    .designs figure img{
+        width: 70vw;
+    }
+    .team{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .home__bottom{
+        margin-left: 3rem;
+    }
+    .bottom_form{
+        margin-left: 3rem;
+    }
+}
